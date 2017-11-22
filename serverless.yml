@@ -1,0 +1,16 @@
+service:
+  name: validadorapi
+
+provider:
+  name: webtasks
+
+# you can define service wide environment variables here
+#  environment:
+#    variable1: value1
+
+functions:
+  main:
+    handler: handler
+
+plugins:
+  - '@webtask/serverless-webtasks'

@@ -1,0 +1,27 @@
+{
+    "name": "webtasks-nodejs",
+    "version": "1.0.0",
+    "description": "Auth0 Webtasks NodeJS template for the Serverless Framework",
+    "main": "handler.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "keywords": [
+        "serverless",
+        "webtasks"
+    ],
+    "devDependencies": {
+        "@webtask/serverless-webtasks": "^1.0.1",
+        "standard": "^10.0.3"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "chai": "^4.1.2",
+        "express": "^4.16.2",
+        "istanbul": "^0.4.5",
+        "mocha": "^4.0.1",
+        "supertest": "^3.0.0",
+        "validadorcfdi": "~1.0.5",
+        "webtask-tools": "^3.2.0"
+    }
+}
