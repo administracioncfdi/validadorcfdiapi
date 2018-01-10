@@ -6,7 +6,7 @@ const express = require('express')
 const validador = require('validadorcfdi')
 const app = express()
 
-app.use(bodyParser.json())
+app.use(bodyParser.json({limit: '15mb'}))
 app.use(bodyParser.urlencoded({extended: true}))
 
 // POST
