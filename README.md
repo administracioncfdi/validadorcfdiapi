@@ -4,24 +4,15 @@
 
 This repository holds a basic API that makes use of the [validadorcfdi package](https://www.npmjs.com/package/validadorcfdi).
 
-It sses serverless webtask for deployment.
+It uses wt cli for deployment.
 
 
 ## Usage
 
-### Get credentials
-```bash
-serverless config credentials --provider webtasks
-```
 
 ### Deploy
 ```bash
-npm install
-serverless deploy
-```
-### Invoke
-```bash
-serverless invoke --function main
+npm run deploy
 ```
 
 ## API
