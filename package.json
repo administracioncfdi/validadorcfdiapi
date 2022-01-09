@@ -4,8 +4,11 @@
   "description": "Serverless Validador CFDI API",
   "main": "handler.js",
   "scripts": {
-    "deploy": "wt create handler.js --name validadorapi-dev-main --no-parse",
+    "start": "node handler.js",
     "test": "mocha"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "keywords": [
     "serverless"
@@ -14,14 +17,12 @@
     "chai": "^4.1.2",
     "istanbul": "^0.4.5",
     "mocha": "^4.0.1",
-    "serverless-offline": "^8.3.1",
     "standard": "^10.0.3",
     "supertest": "^3.0.0"
   },
   "dependencies": {
     "body-parser": "^1.19.1",
     "express": "^4.17.1",
-    "serverless-http": "^2.7.0",
     "validadorcfdi": "^2.0.0"
   }
 }

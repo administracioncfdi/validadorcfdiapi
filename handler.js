@@ -1,10 +1,10 @@
-const serverless = require('serverless-http')
 const express = require('express')
 
 const bodyParser = require('body-parser')
 
 const validador = require('validadorcfdi')
 const app = express()
+const port = process.env.PORT || 3000
 
 app.use(bodyParser.json({limit: '15mb'}))
 app.use(bodyParser.urlencoded({extended: true}))
@@ -27,5 +27,6 @@ app.use('/mirror', (req, res) => {
   })
 })
 
-// Expose this express app as a sls function
-module.exports.handler = serverless(app)
+app.listen(port, () => {
+  console.log('App running')
+})
