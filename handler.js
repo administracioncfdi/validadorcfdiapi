@@ -1,7 +1,7 @@
-const Webtask = require('webtask-tools')
+const serverless = require('serverless-http')
+const express = require('express')
 
 const bodyParser = require('body-parser')
-const express = require('express')
 
 const validador = require('validadorcfdi')
 const app = express()
@@ -27,5 +27,5 @@ app.use('/mirror', (req, res) => {
   })
 })
 
-// Expose this express app as a webtask-compatible function
-module.exports = Webtask.fromExpress(app)
+// Expose this express app as a sls function
+module.exports.handler = serverless(app)
