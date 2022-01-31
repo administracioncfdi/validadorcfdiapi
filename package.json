@@ -21,6 +21,6 @@
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "validadorcfdi": "^2.0.0"
+    "validadorcfdi": "^2.1.1"
   }
 }
